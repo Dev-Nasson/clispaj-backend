@@ -67,7 +67,6 @@ Route::group(['middleware'=>'api','prefix'=>'auth'],function ($router) {
         //Rotas do Bannner
         Route::get('banner','Api\BannerController@index');
         Route::get('bannerservidor','Api\BannerController@bannerservidor');
-
         Route::post('banner/store', 'Api\BannerController@store');
         Route::get('banner/banneredit/{id}', 'Api\BannerController@edit');
         Route::post('banner/update/{id}', 'Api\BannerController@update');

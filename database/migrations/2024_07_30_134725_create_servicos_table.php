@@ -8,7 +8,7 @@ class CreateServicosTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * tipo
      * @return void
      */
     public function up()
@@ -16,6 +16,7 @@ class CreateServicosTable extends Migration
         Schema::create('servicos', function (Blueprint $table) {
             $table->id();
             $table->string('nome')->nullable();
+            $table->string('tipo')->nullable();
             $table->string('icone')->nullable();
             $table->string('imagem')->nullable();
             $table->text('descricao')->nullable();
